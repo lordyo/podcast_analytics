@@ -1,6 +1,6 @@
 # Podlove Analytics Functions
 
-Contains a number of functions for data cleaning, analysis and plotting of Podlove podcast analytics data
+Contains a number of functions for data cleaning, analysis and plotting of Podlove podcast analytics data, written in R. 
 
 ## podlove_import_clean()
 
@@ -18,11 +18,11 @@ creates a list of of best episode starts, defined by a time period
   
 creates a list of best episodes judged by their overall average downloads per day, filtering out new episodes (which usually have a high average)
 
-# graph_average_downloads()
+## graph_average_downloads()
 
 creates a line graph plotting out days since episode launch against average downloads at the point in time over all episodes
   
-# graph_download_curves()
+## graph_download_curves()
   
 creates a line graph plotting out days since episode launch against average downloads at the point in time, showing all episodes
   
