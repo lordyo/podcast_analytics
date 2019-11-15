@@ -26,3 +26,4 @@ creates a line graph plotting out days since episode launch against average down
   
 creates a line graph plotting out days since episode launch against average downloads at the point in time, showing all episodes
   
+![sample plot](https://raw.githubusercontent.com/lordyo/podcast_analytics/master/example_multiplot.png)
