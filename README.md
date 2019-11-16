@@ -24,6 +24,6 @@ creates a line graph plotting out days since episode launch against average down
   
 ## graph_download_curves()
   
-creates a line graph plotting out days since episode launch against average downloads at the point in time, showing all episodes
+creates a line graph plotting out days since episode launch against downloads over time, showing all episodes seperately
   
 ![sample plot](https://raw.githubusercontent.com/lordyo/podcast_analytics/master/example_multiplot.png)
