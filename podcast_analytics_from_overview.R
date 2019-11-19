@@ -42,7 +42,7 @@ podlove_import_clean <- function(fn = "podlove-episode-downloads.csv", ref_fn = 
   
   # get rid of X in point_in_time
   podlove_tidy$point_in_time <- str_replace(podlove_tidy$point_in_time, "X", "")
-
+  
   podlove_tidy
   
 }
@@ -60,8 +60,8 @@ most_downloaded <- function(df_tidy_data, top) {
   
   ########################################################################
   
- library(dplyr)
-
+  library(dplyr)
+  
   most_dls <- df_tidy_data %>% 
     select(id, title, days_since_release, downloads) %>% 
     unique() %>% 
@@ -88,7 +88,7 @@ best_starts <- function(df_tidy_data, start_def = "1w", top) {
   ########################################################################
   
   library(dplyr)
-
+  
   best_start <- df_tidy_data %>% 
     filter(point_in_time == start_def) %>% 
     arrange(desc(download_per_day_at_pit)) %>% 
@@ -113,7 +113,7 @@ evergreens <- function(df_tidy_data, top, min_age = 180) {
   ########################################################################
   
   library(dplyr)
-
+  
   evergreens <- df_tidy_data %>% 
     select(id, title, days_since_release, downloads) %>% 
     unique() %>% 
